@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdoname mi nelumi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e5e5;
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .hidden-text {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Espero que me disculpes mi nelumi✨</h1>
+<p>Presiona la imagen</p>
+
+<div class="image-container" id="imageContainer">
+    <img src="https://static.wikia.nocookie.net/gatopedia/images/2/2e/El_gatoo.png/revision/latest?cb=20230103150310&path-prefix=es
+    " alt="Imagen significativa" id="mainImage">
+    <div class="hidden-text" id="hiddenText">
+        <p>Sabes que te quiero mucho, y no quiero perderte te quiero, te quiero con toda mi alma💗</p>
+        <p>Te lo juro que nunca mas te voy a fallar por nada del mundo.
+        Te lo juro que no te voy a fallar, te voy a cuidar, valorar, hacer que te respeten y voy a cumplir todo y te lo prometo por lo que más quiero</p>
+    </div>
+</div>
+
+<script>
+    const imageContainer = document.getElementById('imageContainer');
+    const hiddenText = document.getElementById('hiddenText');
+
+    imageContainer.addEventListener('click', () => {
+        if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+            hiddenText.style.display = 'block';
+        } else {
+            hiddenText.style.display = 'none';
+        }
+    });
+
+    // Inicialmente ocultar el texto
+    hiddenText.style.display = 'none';
+</script>
+
+</body>
+</html>
